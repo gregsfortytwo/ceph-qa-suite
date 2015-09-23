@@ -1,0 +1,9 @@
+overrides:
+  ceph:
+    client:
+      config:
+        fuse disable pagecache: true
+tasks:
+  - cephfs_test_runner:
+      modules:
+        - tasks.cephfs.test_pingpong
