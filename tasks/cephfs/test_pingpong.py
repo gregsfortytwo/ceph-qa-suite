@@ -45,8 +45,8 @@ class TestPingPong(CephFSTestCase):
                     "./{execf}".format(execf=mount.pingpong_loc), '-rw', target, self.pp_num
                 ],
                 wait=False,
-                stdin=run.PIPE,
-                stdout=StringIO()
+                stdin=run.PIPE #,
+                #stdout=StringIO()
             )
             return p
 
